@@ -1,0 +1,18 @@
+.form{
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__inputs {
+    display: flex;
+
+    &:first-child div {
+      display: flex;
+      flex-direction: column;
+
+
+    }
+  }
+}
