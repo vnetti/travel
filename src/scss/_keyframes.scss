@@ -1,0 +1,14 @@
+@use "sass:math";
+
+@keyframes buttonBgFade {
+    $alphaOne: 100;
+    $alphaTwo: 93;
+    @for $i from 0 through 100 {
+        $value: $i;
+        #{$value + '%'} {
+            background: linear-gradient(180deg, rgba($color: #BC10D8, $alpha: math.div($alphaOne, 100)) 0%, rgba(80, 0, 135, math.div($alphaTwo, 100)) 78%);
+        }
+        $alphaOne: $alphaOne - 1;
+        $alphaTwo: $alphaTwo - 1;
+    }
+}

@@ -117,20 +117,20 @@
 
 
             <!-- form -->
-            <section class="section form">
+            <section class="section form-section">
     <div class="container">
-        <form action="#" class="form__inner">
-            <div class="form__inputs">
-                <div>
-                    <div class="input form__name"><input name="name" type="text" id="name"><label for="name">Name:</label></div>
-                    <div class="input form__email"><input name="email" type="email" id="email"><label for="email">E-mail:</label></div>
-                </div>
-                <div>
-                    <div class="input form__message"><textarea name="message" id="message"></textarea><label for="message">Your message:</label></div>
-                </div>
+        <form action="#" class="form">
+            <div class="form__input form__name">
+                <input class="form__input-field" type="text" name="name" id="formName" required value="" onchange="this.setAttribute('value', this.value)"><label for="formName">Name:</label>
             </div>
-            <div class="form__button">
-                <input type="submit" value="Submit">
+            <div class="form__input form__email">
+                <input class="form__input-field" type="email" name="email" id="formEmail" required value="" onchange="this.setAttribute('value', this.value)"><label for="formEmail">E-mail:</label>
+            </div>
+            <div class="form__input form__message">
+                <textarea class="form__input-field" name="message" id="formMessage" required value="" onchange="this.setAttribute('value', this.value)"></textarea><label for="formMessage">Your message:</label>
+            </div>
+            <div class="form__submit">
+                <input class="button" type="submit" value="Submit">
             </div>
         </form>
     </div>
