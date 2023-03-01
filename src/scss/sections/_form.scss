@@ -11,8 +11,39 @@
     &:first-child div {
       display: flex;
       flex-direction: column;
+      gap: 50px;
+    }
+  }
 
+  .input {
+    position: relative;
+    height: 100%;
+
+    input, textarea {
+      padding: 10px;
+      background-color: #F0F0F0;
+      width: 450px;
+      height: 60px;
+      border: 1px solid $purple-25;
+      border-radius: 10px;
+    }
+
+    textarea {
+      height: 100%;
+    }
+
+    label {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10px;
+      color: $purple-25;
 
     }
+  }
+
+
+  &__name {
+
   }
 }
