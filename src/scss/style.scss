@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 // Global SCSS-files imports
 @import 'vars';
 @import 'fonts';
@@ -9,8 +13,6 @@
 @import 'sections/header';
 
 @import 'sections/hero';
-@import 'sections/section-two';
-@import 'sections/form';
 
 @import 'sections/footer';
 
